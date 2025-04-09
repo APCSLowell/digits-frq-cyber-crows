@@ -25,6 +25,7 @@ public class Digits
       lastvalue=digitList.get(i);	
 	}
 	return true; 
+	}
 	public String toString()
 	{
 		return digitList.toString();
