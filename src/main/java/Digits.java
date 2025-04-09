@@ -21,11 +21,10 @@ public class Digits
    for(int i=0; i < digitList.size(); i++){
      if(digitList.get(i)<=lastvalue)
        return false; 
-    if(digitList.get(i))> lastvalue)
+    if(digitList.get(i)> lastvalue)
       lastvalue=digitList.get(i);	
-
 	}
-	
+	return true; 
 	public String toString()
 	{
 		return digitList.toString();
