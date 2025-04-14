@@ -7,14 +7,16 @@ public class Digits
 
 	public Digits(int num)
 	{ 
-	  ArrayList <Integer> digitList = new ArrayList <Integer>();  
-    if(num==0)
-      digitList.add(0);
-    for (int i=0;i<digitList.size();i++)
-      digitList.add(num/10,num%10);
-    return digitList;   
-	}
-
+digitList = new ArrayList <Integer>();  
+    if (num == 0) {
+            digitList.add(0);
+        } else {
+            while (num > 0) {
+                digitList.add(0, num % 10); // insert at front to maintain order
+                num /= 10;
+            }
+        }
+    }
 	public boolean isStrictlyIncreasing()
 	{ 
 	 int lastvalue=0;
