@@ -10,7 +10,7 @@ public class Digits
 	  ArrayList <Integer> digitList = new ArrayList <Integer>();  
     if(num==0)
       digitList.add(0);
-    for (int i=0;i>digitList.size();i++)
+    for (int i=0;i<digitList.size();i++)
       digitList.add(num/10,num%10);
     return digitList;   
 	}
